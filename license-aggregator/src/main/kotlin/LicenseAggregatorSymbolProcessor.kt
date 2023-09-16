@@ -13,6 +13,7 @@ class LicenseAggregatorSymbolProcessor(
     var executed: Boolean = false
 
     override fun process(resolver: Resolver): List<KSAnnotated> {
+
         if (executed) return emptyList()
         val code = """
             package systems.kuu
