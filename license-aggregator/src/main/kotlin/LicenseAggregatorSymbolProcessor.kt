@@ -46,7 +46,7 @@ class LicenseAggregatorSymbolProcessor(
 //        val pomList = JsonFastParser().parse(dependenciesJsonFile) as List<Pom>
 
         if (executed) return emptyList()
-        return emptyList()
+//        return emptyList()
 
         val file = codeGenerator.createNewFileByPath(
             dependencies = Dependencies.ALL_FILES,

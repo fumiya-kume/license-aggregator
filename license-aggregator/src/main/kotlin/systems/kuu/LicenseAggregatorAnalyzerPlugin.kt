@@ -10,12 +10,12 @@ import org.gradle.api.tasks.diagnostics.DependencyReportTask
 import org.slf4j.LoggerFactory
 import java.io.File
 
-class LicenseAggregatorPlugin : Plugin<Project> {
+class LicenseAggregatorAnalyzerPlugin : Plugin<Project> {
 
     private val logger = LoggerFactory.getLogger(DependencyReportTask::class.java)
 
     override fun apply(target: Project) {
-        val generateTask = target.tasks.register("generateLicenseFile") {
+        val generateTask = target.tasks.register("analyzeLicenseFile") {
             val dependencies = target.configurations
                 .map {
                     runCatching {
@@ -70,7 +70,6 @@ class LicenseAggregatorPlugin : Plugin<Project> {
         }
 
         target.tasks.findByPath("build")?.dependsOn(generateTask)
-        target.tasks.findByPath("kspKotlin")?.dependsOn(generateTask)
     }
 }
 
