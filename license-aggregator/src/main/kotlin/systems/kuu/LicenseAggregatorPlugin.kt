@@ -1,67 +1,89 @@
 package systems.kuu
 
 import groovy.json.JsonBuilder
-import groovy.namespace.QName
+import groovy.util.Node
+import groovy.util.NodeList
 import groovy.xml.XmlParser
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.artifacts.ResolvedArtifact
-import org.gradle.api.artifacts.ResolvedDependency
+import org.gradle.api.tasks.diagnostics.DependencyReportTask
+import org.slf4j.LoggerFactory
 import java.io.File
 
 class LicenseAggregatorPlugin : Plugin<Project> {
+
+    private val logger = LoggerFactory.getLogger(DependencyReportTask::class.java)
+
     override fun apply(target: Project) {
-        target.task("generateLicenseFile") {
-            val dependencies:List<ResolvedArtifact> = target.configurations
-                .filter { it.isCanBeResolved }
+        val generateTask = target.tasks.register("generateLicenseFile") {
+            val dependencies = target.configurations
                 .map {
-//                val lenientConfiguration = it.resolvedConfiguration.lenientConfiguration
-                it.resolvedConfiguration.resolvedArtifacts
-
-//                val lenientConfiguration = it.resolvedConfiguration.lenientConfiguration
-//                lenientConfiguration.allModuleDependencies
-            }.flatten()
-            return@task
-
-            val output = dependencies
-//                .map {
-//                    it.allModuleArtifacts
-//                }
-//                .flatten()
-                .map {
-                    val moduleVersionid = it.moduleVersion.id
-                    target.dependencies.create("${moduleVersionid.group}:${moduleVersionid.name}:${moduleVersionid.version}@pom")
-                        .run {
-                            target.configurations.detachedConfiguration(this).resolve()
-                        }
-                }
-                .flatten()
-                .map { it ->
-                    val xml = XmlParser().parse(it)
-                    val name = xml.get("name").toString()
-                    val url = xml.get("url").toString()
-                    val licenses = xml.getAt(QName("licenses")).map { licenseNode ->
-                        val node = licenseNode as groovy.util.Node
-                        node.get("name").toString() to node.get("url").toString()
+                    runCatching {
+                        it.copyRecursive().apply {
+                            it.isCanBeResolved = true
+                        }.resolvedConfiguration.lenientConfiguration.artifacts
                     }
+                        .getOrNull()
+                }
+                .filterNotNull()
+                .flatten()
+                .map {
+                    val dependency = it.run {
+                        target.dependencies.create("${moduleVersion.id.group}:${moduleVersion.id.name}:${moduleVersion.id.version}@pom")
+                    }
+                    target.configurations.detachedConfiguration(dependency)
+                }
+                .map {
+                    it.resolve().toList().first()
+                }.map {
+                    val xml = XmlParser().parse(it)
+                    val groupId = xml.getValue("groupId")
+                    val artifactId = xml.getValue("artifactId")
+                    val version = xml.getValue("version")
+                    val name = xml.getValue("name")
+                    val description = xml.getValue("description")
+                    val url = xml.getValue("url")
+                    val license = xml.getAsNode("licenses")?.getAsNode("license").let { node ->
+                        Pom.License(
+                            name = node?.getValue("name"),
+                            url = node?.getValue("url"),
+                            distribution = node?.getValue("distribution"),
+                            comments = node?.getValue("comments")
+                        )
+
+                    }
+
                     Pom(
                         name = name,
+                        groupId = groupId,
+                        artifactId = artifactId,
+                        version = version,
+                        description = description,
                         url = url,
-                        licenses = licenses
+                        licenses = license
                     )
                 }
-
-            val directly = File(target.buildDir, "generated")
-            directly.mkdir()
-//            val outputFile = File(directly, "dependencies.json")
-//            outputFile.writeText(JsonBuilder(output).toPrettyString())
+            val buildDir = target.rootProject.layout.buildDirectory.asFile.get()
+            buildDir.mkdir()
+            val outputFile = File(buildDir, "dependencies.json")
+            outputFile.writeText(JsonBuilder(dependencies).toPrettyString())
         }
+
+        target.tasks.findByPath("build")?.dependsOn(generateTask)
+        target.tasks.findByPath("kspKotlin")?.dependsOn(generateTask)
     }
 }
 
+fun Node.getValue(name: String): String? {
+    return getAsNode(name)?.text()
+}
 
-data class Pom(
-    val name: String,
-    val url: String,
-    val licenses: List<Pair<String, String>>
-)
+fun Node.getAsNode(name: String): Node? {
+    val target = get(name)
+    return if (target is NodeList) {
+        target.firstOrNull() as Node?
+    } else {
+        target as Node
+    }
+}
+
