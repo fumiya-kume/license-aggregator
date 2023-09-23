@@ -1,5 +1,6 @@
 package systems.kuu
 
+import com.android.build.gradle.LibraryExtension
 import groovy.json.JsonBuilder
 import groovy.util.Node
 import groovy.util.NodeList
@@ -7,6 +8,7 @@ import groovy.xml.XmlParser
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.tasks.diagnostics.DependencyReportTask
+import org.gradle.kotlin.dsl.configure
 import org.slf4j.LoggerFactory
 import java.io.File
 
@@ -63,13 +65,25 @@ class LicenseAggregatorAnalyzerPlugin : Plugin<Project> {
                         licenses = license
                     )
                 }
-            val buildDir = target.rootProject.layout.buildDirectory.asFile.get()
-            buildDir.mkdir()
+            val buildDir = File(target.rootProject.layout.buildDirectory.asFile.get(),"/generated/res/raw")
+            buildDir.mkdirs()
+            with(target){
+                android {
+                    this.libraryVariants.map {variant ->
+                        val files = target.files(buildDir.parentFile).builtBy("analyzeLicenseFile")
+                        variant.registerGeneratedResFolders (files)
+                    }
+                }
+            }
             val outputFile = File(buildDir, "dependencies.json")
             outputFile.writeText(JsonBuilder(dependencies).toPrettyString())
         }
 
         target.tasks.findByPath("build")?.dependsOn(generateTask)
+    }
+
+    fun Project.android(action: LibraryExtension.() -> Unit) {
+        extensions.configure(action)
     }
 }
 
@@ -85,4 +99,6 @@ fun Node.getAsNode(name: String): Node? {
         target as Node
     }
 }
+
+
 

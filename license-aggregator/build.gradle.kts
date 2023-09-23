@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm")
     `maven-publish`
     `java-gradle-plugin`
+    `kotlin-dsl`
 }
 
 group = "systems.kuu"
@@ -10,7 +11,10 @@ version = "1.0.0"
 dependencies {
     implementation(gradleApi())
     implementation(localGroovy())
-    implementation("com.google.devtools.ksp:symbol-processing-api:1.9.0-1.0.11")
+    implementation("com.android.library:com.android.library.gradle.plugin:8.1.1")
+//    implementation("com.android.tools.build:gradle:7.1.0")
+//    implementation("com.android.tools.build:gradle-api:7.1.0")
+    implementation("com.google.devtools.ksp:symbol-processing-api:1.9.10-1.0.13")
 
     testImplementation(kotlin("test"))
 }
