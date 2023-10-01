@@ -13,8 +13,8 @@ dependencies {
     implementation(localGroovy())
 //    implementation("com.android.library:com.android.library.gradle.plugin:8.1.1")
     implementation("com.android.tools.build:gradle:8.1.0")
-    implementation("com.android.tools.build:gradle-api:8.1.1")
-    implementation("com.google.devtools.ksp:symbol-processing-api:1.8.10-1.0.9")
+    implementation("com.android.tools.build:gradle-api:8.1.2")
+//    implementation("com.google.devtools.ksp:symbol-processing-api:1.8.10-1.0.9")
     testImplementation(kotlin("test"))
 }
 

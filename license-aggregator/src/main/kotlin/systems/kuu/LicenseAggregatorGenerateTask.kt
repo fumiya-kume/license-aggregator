@@ -1,6 +1,8 @@
 package systems.kuu
 
 import org.gradle.api.DefaultTask
+import org.gradle.api.tasks.InputDirectory
+import org.gradle.api.tasks.InputFile
 import org.gradle.api.tasks.TaskAction
 import org.gradle.api.tasks.diagnostics.DependencyReportTask
 import org.slf4j.LoggerFactory
@@ -10,17 +12,17 @@ open class LicenseAggregatorGenerateTask : DefaultTask() {
 
     private val logger = LoggerFactory.getLogger(DependencyReportTask::class.java)
 
-//    var libraryExtension:LibraryExtension? = null
+    @InputDirectory
+    var target: String? = null
 
     @TaskAction
-    fun action(){
+    fun action() {
         runCatching {
-
             val buildDir = project.rootProject.layout.buildDirectory.asFile.get()
-            val dependencyJsonFile = File(buildDir, "/generated/res/raw/dependencies.json")
-            val destinationFolder = File("${project.buildDir}/generated/aggregator/res/raw")
+            val dependencyJsonFile = File(buildDir, "/generated/dependencies.json")
+            val destinationFolder = File(target, "raw")
             destinationFolder.mkdirs()
-            val destinationFile = File(destinationFolder,"/dependencies.json")
+            val destinationFile = File(destinationFolder, "/dependencies.json")
             File(dependencyJsonFile.absolutePath).copyTo(target = destinationFile, overwrite = true)
 //            val pomOriginalList = JsonSlurper().parseText(dependenciesJsonFile) as ArrayList<LazyMap>
 //            val pomList = pomOriginalList.map { any ->
@@ -114,7 +116,7 @@ open class LicenseAggregatorGenerateTask : DefaultTask() {
         """.trimIndent()
     }
 
-    private fun pomFileContent():String{
+    private fun pomFileContent(): String {
         return """
             package systems.kuu
 

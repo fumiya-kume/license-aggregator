@@ -58,7 +58,7 @@ open class LicenseAggregatorAnalyzeTask : DefaultTask() {
                     licenses = license
                 )
             }
-        val buildDir = File(project.rootProject.layout.buildDirectory.asFile.get(),"/generated/res/raw")
+        val buildDir = File(project.rootProject.layout.buildDirectory.asFile.get(),"/generated")
         buildDir.mkdirs()
         val outputFile = File(buildDir, "dependencies.json")
         outputFile.writeText(JsonBuilder(dependencies).toPrettyString())
