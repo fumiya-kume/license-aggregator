@@ -31,3 +31,4 @@ dependencyResolutionManagement {
 include("workload")
 include("license-aggregator")
 include(":test")
+include(":license-aggregator-compose")
