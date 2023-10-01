@@ -15,14 +15,6 @@ class LicenseAggregatorAnalyzerPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         val analyzeTask = target.tasks.register<LicenseAggregatorAnalyzeTask>("licenseAggregatorGenerateTask",).get()
         target.tasks.getByPath("build").dependsOn(analyzeTask)
-
-        target.android {
-
-        }
-    }
-
-    fun Project.android(action: LibraryExtension.() -> Unit) {
-        extensions.configure(action)
     }
 }
 
