@@ -32,8 +32,8 @@ android {
     }
 }
 
-apply(plugin = "systems.kuu.license-aggregator.analyzer")
-apply(plugin = "systems.kuu.license-aggregator.generator")
+//apply(plugin = "systems.kuu.license-aggregator.analyzer")
+//apply(plugin = "systems.kuu.license-aggregator.generator")
 
 dependencies {
     implementation(project(":license-aggregator-compose"))

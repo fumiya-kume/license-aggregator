@@ -14,6 +14,6 @@ buildscript {
     }
 
     dependencies{
-        classpath("systems.kuu:license-aggregator:1.0.0")
+//        classpath("systems.kuu:license-aggregator:1.0.0")
     }
 }
