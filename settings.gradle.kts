@@ -30,5 +30,4 @@ dependencyResolutionManagement {
 //rootProject.name = "license-aggregator"
 include("workload")
 include("license-aggregator")
-include(":test")
 include(":license-aggregator-compose")
