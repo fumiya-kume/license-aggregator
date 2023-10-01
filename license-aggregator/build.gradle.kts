@@ -1,7 +1,6 @@
 plugins {
     kotlin("jvm")
     `maven-publish`
-//    `java-gradle-plugin`
     `kotlin-dsl`
 }
 
