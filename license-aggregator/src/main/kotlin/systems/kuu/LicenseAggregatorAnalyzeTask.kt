@@ -12,6 +12,7 @@ open class LicenseAggregatorAnalyzeTask : DefaultTask() {
     @TaskAction
     fun action(){
         val dependencies = project.configurations
+            .asSequence()
             .map {
                 runCatching {
                     it.copyRecursive().apply {
@@ -58,17 +59,18 @@ open class LicenseAggregatorAnalyzeTask : DefaultTask() {
                     licenses = license
                 )
             }
+            .toList()
         val buildDir = File(project.rootProject.layout.buildDirectory.asFile.get(),"/generated")
         buildDir.mkdirs()
         val outputFile = File(buildDir, "dependencies.json")
         outputFile.writeText(JsonBuilder(dependencies).toPrettyString())
     }
 
-    fun Node.getValue(name: String): String? {
+    private fun Node.getValue(name: String): String? {
         return getAsNode(name)?.text()
     }
 
-    fun Node.getAsNode(name: String): Node? {
+    private fun Node.getAsNode(name: String): Node? {
         val target = get(name)
         return if (target is NodeList) {
             target.firstOrNull() as Node?
