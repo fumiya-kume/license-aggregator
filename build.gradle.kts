@@ -18,5 +18,6 @@ buildscript {
 }
 
 subprojects{
+    group = "systems.kuu.license-aggregator"
     version = "0.0.5"
 }
