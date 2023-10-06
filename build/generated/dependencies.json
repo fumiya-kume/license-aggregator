@@ -1,0 +1,688 @@
+[
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Standard Library JDK 8 extension",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib Jdk8",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib-jdk8"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Standard Library JDK 7 extension",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib Jdk7",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib-jdk7"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Standard Library for JVM",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Common Standard Library",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib Common",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib-common"
+    },
+    {
+        "version": "13.0",
+        "groupId": "org.jetbrains",
+        "description": "A set of annotations used for code inspection support and code documentation.",
+        "url": "http://www.jetbrains.org",
+        "name": "IntelliJ IDEA Annotations",
+        "licenses": {
+            "comments": "A business-friendly OSS license",
+            "distribution": "repo",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache Software License, Version 2.0"
+        },
+        "artifactId": "annotations"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter (Aggregator)",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter-params\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter Params",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter-params"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter-engine\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter Engine",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter-engine"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter-api\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter API",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter-api"
+    },
+    {
+        "version": "1.9.1",
+        "groupId": "org.junit.platform",
+        "description": "Module \"junit-platform-engine\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Platform Engine API",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-platform-engine"
+    },
+    {
+        "version": "1.9.1",
+        "groupId": "org.junit.platform",
+        "description": "Module \"junit-platform-commons\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Platform Commons",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-platform-commons"
+    },
+    {
+        "version": "1.2.0",
+        "groupId": "org.opentest4j",
+        "description": "Open Test Alliance for the JVM",
+        "url": "https://github.com/ota4j-team/opentest4j",
+        "name": "org.opentest4j:opentest4j",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "opentest4j"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Standard Library JDK 8 extension",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib Jdk8",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib-jdk8"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Standard Library JDK 7 extension",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib Jdk7",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib-jdk7"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Standard Library for JVM",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Common Standard Library",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib Common",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib-common"
+    },
+    {
+        "version": "13.0",
+        "groupId": "org.jetbrains",
+        "description": "A set of annotations used for code inspection support and code documentation.",
+        "url": "http://www.jetbrains.org",
+        "name": "IntelliJ IDEA Annotations",
+        "licenses": {
+            "comments": "A business-friendly OSS license",
+            "distribution": "repo",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache Software License, Version 2.0"
+        },
+        "artifactId": "annotations"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Compiler (embeddable)",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Compiler Embeddable",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-compiler-embeddable"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Standard Library for JVM",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Script Runtime",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Script Runtime",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-script-runtime"
+    },
+    {
+        "version": "1.6.10",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Full Reflection Library",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Reflect",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-reflect"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Daemon (for using with embeddable compiler)",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Daemon Embeddable",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-daemon-embeddable"
+    },
+    {
+        "version": "1.0.20200330",
+        "groupId": "org.jetbrains.intellij.deps",
+        "description": "Fork of trove4j library used in IntelliJ Platform.",
+        "url": "https://github.com/JetBrains/intellij-deps-trove4j",
+        "name": "Trove4J",
+        "licenses": {
+            "comments": null,
+            "distribution": "repo",
+            "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+            "name": "GNU LESSER GENERAL PUBLIC LICENSE 2.1"
+        },
+        "artifactId": "trove4j"
+    },
+    {
+        "version": "5.6.0",
+        "groupId": "net.java.dev.jna",
+        "description": "Java Native Access",
+        "url": "https://github.com/java-native-access/jna",
+        "name": "Java Native Access",
+        "licenses": {
+            "comments": null,
+            "distribution": "repo",
+            "url": "http://www.gnu.org/licenses/licenses.html",
+            "name": "LGPL, version 2.1"
+        },
+        "artifactId": "jna"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Common Standard Library",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib Common",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib-common"
+    },
+    {
+        "version": "13.0",
+        "groupId": "org.jetbrains",
+        "description": "A set of annotations used for code inspection support and code documentation.",
+        "url": "http://www.jetbrains.org",
+        "name": "IntelliJ IDEA Annotations",
+        "licenses": {
+            "comments": "A business-friendly OSS license",
+            "distribution": "repo",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache Software License, Version 2.0"
+        },
+        "artifactId": "annotations"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin KLIB Library Commonizer (for using with embeddable compiler)",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Klib Commonizer Embeddable",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-klib-commonizer-embeddable"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Compiler (embeddable)",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Compiler Embeddable",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-compiler-embeddable"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Standard Library for JVM",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Common Standard Library",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Stdlib Common",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-stdlib-common"
+    },
+    {
+        "version": "13.0",
+        "groupId": "org.jetbrains",
+        "description": "A set of annotations used for code inspection support and code documentation.",
+        "url": "http://www.jetbrains.org",
+        "name": "IntelliJ IDEA Annotations",
+        "licenses": {
+            "comments": "A business-friendly OSS license",
+            "distribution": "repo",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache Software License, Version 2.0"
+        },
+        "artifactId": "annotations"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Script Runtime",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Script Runtime",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-script-runtime"
+    },
+    {
+        "version": "1.6.10",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Full Reflection Library",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Reflect",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-reflect"
+    },
+    {
+        "version": "1.8.20",
+        "groupId": "org.jetbrains.kotlin",
+        "description": "Kotlin Daemon (for using with embeddable compiler)",
+        "url": "https://kotlinlang.org/",
+        "name": "Kotlin Daemon Embeddable",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "kotlin-daemon-embeddable"
+    },
+    {
+        "version": "1.0.20200330",
+        "groupId": "org.jetbrains.intellij.deps",
+        "description": "Fork of trove4j library used in IntelliJ Platform.",
+        "url": "https://github.com/JetBrains/intellij-deps-trove4j",
+        "name": "Trove4J",
+        "licenses": {
+            "comments": null,
+            "distribution": "repo",
+            "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+            "name": "GNU LESSER GENERAL PUBLIC LICENSE 2.1"
+        },
+        "artifactId": "trove4j"
+    },
+    {
+        "version": "5.6.0",
+        "groupId": "net.java.dev.jna",
+        "description": "Java Native Access",
+        "url": "https://github.com/java-native-access/jna",
+        "name": "Java Native Access",
+        "licenses": {
+            "comments": null,
+            "distribution": "repo",
+            "url": "http://www.gnu.org/licenses/licenses.html",
+            "name": "LGPL, version 2.1"
+        },
+        "artifactId": "jna"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter (Aggregator)",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter-params\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter Params",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter-params"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter-engine\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter Engine",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter-engine"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter-api\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter API",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter-api"
+    },
+    {
+        "version": "1.9.1",
+        "groupId": "org.junit.platform",
+        "description": "Module \"junit-platform-engine\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Platform Engine API",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-platform-engine"
+    },
+    {
+        "version": "1.9.1",
+        "groupId": "org.junit.platform",
+        "description": "Module \"junit-platform-commons\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Platform Commons",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-platform-commons"
+    },
+    {
+        "version": "1.2.0",
+        "groupId": "org.opentest4j",
+        "description": "Open Test Alliance for the JVM",
+        "url": "https://github.com/ota4j-team/opentest4j",
+        "name": "org.opentest4j:opentest4j",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "opentest4j"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter (Aggregator)",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter-params\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter Params",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter-params"
+    },
+    {
+        "version": "5.9.1",
+        "groupId": "org.junit.jupiter",
+        "description": "Module \"junit-jupiter-api\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Jupiter API",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-jupiter-api"
+    },
+    {
+        "version": "1.9.1",
+        "groupId": "org.junit.platform",
+        "description": "Module \"junit-platform-commons\" of JUnit 5.",
+        "url": "https://junit.org/junit5/",
+        "name": "JUnit Platform Commons",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "https://www.eclipse.org/legal/epl-v20.html",
+            "name": "Eclipse Public License v2.0"
+        },
+        "artifactId": "junit-platform-commons"
+    },
+    {
+        "version": "1.2.0",
+        "groupId": "org.opentest4j",
+        "description": "Open Test Alliance for the JVM",
+        "url": "https://github.com/ota4j-team/opentest4j",
+        "name": "org.opentest4j:opentest4j",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "opentest4j"
+    },
+    {
+        "version": "1.1.2",
+        "groupId": "org.apiguardian",
+        "description": "@API Guardian",
+        "url": "https://github.com/apiguardian-team/apiguardian",
+        "name": "org.apiguardian:apiguardian-api",
+        "licenses": {
+            "comments": null,
+            "distribution": null,
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            "name": "The Apache License, Version 2.0"
+        },
+        "artifactId": "apiguardian-api"
+    }
+]
