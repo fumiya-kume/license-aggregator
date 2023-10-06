@@ -1,4 +1,4 @@
-# license-aggregator
+# license-aggregator [![](https://jitci.com/gh/fumiya-kume/license-aggregator/svg)](https://jitci.com/gh/fumiya-kume/license-aggregator)
 
 The license screen generation library for Android, especially for multi-module Android application.
 
