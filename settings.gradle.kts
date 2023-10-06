@@ -17,6 +17,6 @@ dependencyResolutionManagement {
 }
 
 //rootProject.name = "license-aggregator"
-include("workload")
+//include("workload")
 include("license-aggregator")
 include(":license-aggregator-compose")
