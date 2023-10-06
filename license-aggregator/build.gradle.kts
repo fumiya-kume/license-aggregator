@@ -15,6 +15,11 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
+kotlin {
+    jvmToolchain(11)
+
+}
+
 //gradlePlugin {
 //    plugins {
 //        create("licenseAggregator") {
