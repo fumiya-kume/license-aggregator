@@ -52,7 +52,7 @@ dependencies {
 
 publishing {
     publications {
-        create<MavenPublication>("mavenJava") {
+        create<MavenPublication>("mavenJavaCompose") {
             groupId = project.group.toString()
             artifactId = "compose"
             version = project.version.toString()

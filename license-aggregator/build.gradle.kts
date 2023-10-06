@@ -28,7 +28,7 @@ kotlin {
 
 publishing {
     publications {
-        create<MavenPublication>("mavenJava") {
+        create<MavenPublication>("mavenJavaPlugin") {
             groupId = project.group.toString()
             artifactId = "plugin"
             version = project.version.toString()
