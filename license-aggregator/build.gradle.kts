@@ -27,7 +27,7 @@ dependencies {
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
-            groupId = "systems.kuu"
+            groupId = "systems.kuu.license-aggregator"
             artifactId = "license-aggregator"
             version = "0.0.1"
 //            repositories {
