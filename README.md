@@ -20,6 +20,6 @@ dependencyResolutionManagement {
 
 ```gradle
 dependencies {
-   implementation 'com.github.fumiya-kume:license-aggregator:Tag'
+   implementation 'com.github.fumiya-kume:license-aggregator:0.0.2'
 }
 ```
