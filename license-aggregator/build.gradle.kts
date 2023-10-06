@@ -10,7 +10,7 @@ version = "1.0.0"
 dependencies {
     implementation(gradleApi())
     implementation(localGroovy())
-    implementation("com.android.tools.build:gradle:8.1.2")
+    implementation("com.android.tools.build:gradle:8.2.0-beta06")
 //    implementation("com.android.tools.build:gradle-api:8.1.2")
     testImplementation(kotlin("test"))
 }
