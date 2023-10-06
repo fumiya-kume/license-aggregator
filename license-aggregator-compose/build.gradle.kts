@@ -53,9 +53,9 @@ dependencies {
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
-            groupId = "systems.kuu.license-aggregator"
-            artifactId = "compose"
-            version = "0.0.4"
+            groupId = project.group.toString()
+            artifactId = project.name
+            version = project.version.toString()
 //            repositories {
 //                maven {
 //                    val releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")

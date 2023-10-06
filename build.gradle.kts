@@ -16,3 +16,7 @@ buildscript {
 //        classpath("systems.kuu:license-aggregator:1.0.0")
     }
 }
+
+subprojects{
+    version = "0.0.5"
+}
