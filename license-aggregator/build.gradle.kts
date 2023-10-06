@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "systems.kuu"
-version = "1.0.0"
+version = "0.0.2"
 
 dependencies {
     implementation(gradleApi())
@@ -34,7 +34,7 @@ publishing {
         create<MavenPublication>("mavenJava") {
             groupId = "systems.kuu.license-aggregator"
             artifactId = "license-aggregator"
-            version = "0.0.1"
+            version = "0.0.2"
 //            repositories {
 //                maven {
 //                    val releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
