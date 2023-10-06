@@ -30,7 +30,7 @@ publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             groupId = project.group.toString()
-            artifactId = project.name
+            artifactId = "plugin"
             version = project.version.toString()
 //            repositories {
 //                maven {
