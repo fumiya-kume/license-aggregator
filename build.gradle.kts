@@ -14,7 +14,6 @@ buildscript {
 
     dependencies{
 //        classpath("systems.kuu:license-aggregator:1.0.0")
-        classpath("com.android.tools.build:gradle:8.0.2")
     }
 }
 
