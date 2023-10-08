@@ -8,6 +8,7 @@ dependencies {
     implementation(gradleApi())
     implementation(localGroovy())
     implementation("com.android.tools.build:gradle:8.0.0")
+//    implementation("com.android.tools.build:gradle-api:8.1.2")
     testImplementation(kotlin("test"))
 }
 
