@@ -16,7 +16,14 @@ kotlin {
 
 }
 
-
+//gradlePlugin {
+//    plugins {
+//        create("licenseAggregator") {
+//            id = "systems.kuu.license-aggregator"
+//            implementationClass = "systems.kuu.LicenseAggregatorPlugin"
+//        }
+//    }
+//}
 
 publishing {
     publications {
